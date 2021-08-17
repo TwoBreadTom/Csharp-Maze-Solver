@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.Extensions.DependencyInjection;
 using static MazeApp.MazeCreator;
 using System.Collections.Generic;
 
@@ -13,13 +12,13 @@ namespace MazeApp
             if (maze[currentY, currentX] != "S")
             {
                 maze[currentY, currentX] = "@";
-                mazeCreator?.PrintMaze(maze);
+                mazeCreator.PrintMaze(maze);
                 maze[currentY, currentX] = " ";
             }
             else
             {
                 maze[currentY, currentX] = "S";
-                mazeCreator?.PrintMaze(maze);
+                mazeCreator.PrintMaze(maze);
             }
         }
 
